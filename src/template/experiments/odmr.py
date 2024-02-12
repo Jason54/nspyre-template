@@ -117,6 +117,8 @@ class SpinMeasurements:
                     if experiment_widget_process_queue(self.queue_to_exp) == 'stop':
                         # the GUI has asked us nicely to exit
                         return
+    def new_odmr(self):
+        pass
 
 if __name__ == '__main__':
     exp = SpinMeasurements()
