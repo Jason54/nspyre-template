@@ -31,11 +31,6 @@ with InstrumentServer() as local_inserv, InstrumentGateway(port=42067) as remote
         import_or_file = 'file',
         class_name = 'FakeODMRInstrument')
 
-    local_inserv.add(
-        name = 'ppms', 
-        class_path = 'nspyre_drivers.quantumdesign.qdinstrument', 
-        import_or_file = 'import',
-        class_name = 'Dynacool')
     # run a CLI (command-line interface) that allows the user to enter
     # commands to control the server
     serve_instrument_server_cli(local_inserv)
